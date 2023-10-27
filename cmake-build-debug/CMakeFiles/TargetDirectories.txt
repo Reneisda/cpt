@@ -1,0 +1,3 @@
+/home/rene/CLionProjects/DataTransfer/cmake-build-debug/CMakeFiles/DataTransfer.dir
+/home/rene/CLionProjects/DataTransfer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rene/CLionProjects/DataTransfer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

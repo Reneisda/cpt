@@ -1,0 +1,10 @@
+//
+// Created by rene on 10/26/23.
+//
+
+#ifndef DATATRANSFER_SETTINGS_H
+#define DATATRANSFER_SETTINGS_H
+#define PORT 8080
+#define PROTOCOL_IP 0
+#define BUFFER_SIZE 1024
+#endif //DATATRANSFER_SETTINGS_H
