@@ -4,5 +4,5 @@
 
 #ifndef DATATRANSFER_CLIENT_H
 #define DATATRANSFER_CLIENT_H
-void clientConnect();
+void startUpload(char *ip, char *path);
 #endif //DATATRANSFER_CLIENT_H
