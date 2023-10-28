@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <arpa/inet.h>
 #include "settings.h"
 #ifdef __linux__
     #include <sys/socket.h>
@@ -10,6 +9,8 @@
 
 #elif _WIN32
     #include <winsock2.h>
+    #pragma comment(lib, "ws2_32.lib")
+
 #else
     #error Platform not supported
 #endif
@@ -31,7 +32,7 @@ void startServer(char *ip, char* path) {
         perror("Socket failed");
         exit(EXIT_FAILURE);
     }
-    if (setsockopt(server_fd, SOL_SOCKET,SO_REUSEADDR | SO_REUSEPORT, &opt,sizeof(opt))) {
+    if (setsockopt(server_fd, SOL_SOCKET,PO_REN_PORT | SO_REUSEPORT, &opt,sizeof(opt))) {
         perror("setsockopt error");
         exit(EXIT_FAILURE);
     }

@@ -1,13 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <arpa/inet.h>
 #include <string.h>
 #include "client.h"
 #include "settings.h"
+#ifdef __linux__
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+#elif _WIN32
+#include <winsock2.h>
+
+#pragma comment(lib, "ws2_32.lib")
+#else
+    #error Platform not supported
+#endif
 //
 // Created by rene on 10/25/23.
 //

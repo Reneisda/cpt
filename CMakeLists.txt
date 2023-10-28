@@ -8,4 +8,5 @@ add_executable(DataTransfer main.c
         server.h
         client.c
         client.h
-        settings.h)
+        settings.h
+        win/client.c)
